@@ -35,6 +35,7 @@ public class CityService {
         city = repository.save(city);
         return new CityDTO(city);
     }
+
     public void delete(Long id) {
         try{
             repository.deleteById(id);
